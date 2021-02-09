@@ -1,7 +1,7 @@
 {
-	"name": "adalab-web-starter-kit",
-	"version": "3.0.1",
-	"description": "Adalab web starter kit",
+	"name": "portfolio-linea-base",
+	"version": "1.0.0",
+	"description": "portfolio linea base",
 	"dependencies": {
 		"browser-sync": "^2.26.12",
 		"del": "^5.1.0",
@@ -32,9 +32,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com:Adalab/adalab-web-starter-kit.git"
+		"url": ""
 	},
-	"author": "Adalab",
-	"license": "MIT",
-	"homepage": "https://github.com/adalab/adalab-web-starter-kit"
+	"author": "",
+	"license": "",
+	"homepage": ""
 }
