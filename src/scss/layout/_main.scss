@@ -1,0 +1,94 @@
+.main {
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.main__container--item {
+  height: 480px;
+  width: 600px;
+  border: none;
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__container--itemLink {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__container--item .main__container--itemLink::after {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s all ease-in-out;
+}
+
+.main__container--item .main__container--itemLink .main__container--itemImg {
+  transition: .3s transform ease;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.main__container--item .main__container--itemLink > .main__container--itemInfo {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+  transition: .3s all ease;
+}
+
+.main__container--item .main__container--itemLink > .main__container--itemInfo h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.main__container--item .main__container--itemLink > .main__container--itemInfo span {
+  font-size: 14px;
+  letter-spacing: .2rem;
+}
+
+.main__container--item .main__container--itemLink:hover {
+  text-decoration: none;
+}
+
+.main__container--item .main__container--itemLink:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.main__container--item .main__container--itemLink:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main__container--item .main__container--itemLink:hover .main__container--itemInfo {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
