@@ -9,11 +9,11 @@
 
 }
 
-.header__title {
+.header__container--title {
  margin: 37px 0 0 30px;
 }
 
-.header__nav {
+.header__container--nav {
   margin-right: 30px;
   display: flex;
   flex-direction: row;
@@ -25,11 +25,11 @@
   
 }
 
-.header__nav li {
+.header__container--nav li {
     list-style: none;
 }
 
-.header__nav li a {
+.header__container--nav li a {
   text-decoration: none;
 
 }
