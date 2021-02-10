@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 .main {
   margin-top: 30px;
   height: 100%;
@@ -5,9 +9,14 @@
   }
 
 .main__container {
+  width: 1235px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 35px;
+  grid-column-gap:35px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main__container--item {
@@ -23,7 +32,7 @@
 .main__container--itemLink {
   display: block;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .main__container--item .main__container--itemLink::after {
@@ -41,9 +50,9 @@
 }
 
 .main__container--item .main__container--itemLink .main__container--itemImg {
-  transition: .3s transform ease;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  // transition: .3s transform ease;
+  // -webkit-transform: scale(1);
+  // transform: scale(1);
 }
 
 .main__container--item .main__container--itemLink > .main__container--itemInfo {
@@ -54,22 +63,26 @@
   z-index: 3;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: #fff;
-  opacity: 0;
+  color: #000000;
+  font-family: 'Rubik';
+    opacity: 0;
   visibility: hidden;
   margin-top: 20px;
   transition: .3s all ease;
 }
 
 .main__container--item .main__container--itemLink > .main__container--itemInfo h3 {
-  font-size: 20px;
   margin-bottom: 0;
   text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+
 }
 
 .main__container--item .main__container--itemLink > .main__container--itemInfo span {
-  font-size: 14px;
   letter-spacing: .2rem;
+  font-size: 18px;
+  font-weight: 300px;
 }
 
 .main__container--item .main__container--itemLink:hover {
@@ -77,13 +90,14 @@
 }
 
 .main__container--item .main__container--itemLink:hover img {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  // -webkit-transform: scale(1.05);
+  // transform: scale(1.05);
   // transition: ;
 }
 
 .main__container--item .main__container--itemLink:hover:after {
   opacity: 1;
+  background-color: rgba(255, 255, 255, 0.8);
   visibility: visible;
 }
 
