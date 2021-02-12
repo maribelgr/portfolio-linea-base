@@ -18,7 +18,11 @@
   }
 
 .header__title {
- margin: 37px 0 0 30px;
+ min-width: 201px;
+ margin: 37px 0 0 40px;
+ @media all and (min-width: 768px) {
+   margin: 37px 0 0 80px;
+ }
 }
 
 .header__title--link {
@@ -29,7 +33,7 @@
 }
 
 .header__nav {
-  margin-right: 30px;
+  margin-right: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
