@@ -8,14 +8,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   }
 
 .container {
   width: 96%;
   height: 100%;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(14, 1fr);
@@ -28,10 +27,9 @@
   }
 
   @media all and (min-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    // width: 100%;
-
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(7, 480px);
+      // width: 100%;
   }
 
 }
@@ -43,7 +41,8 @@
   // margin-left: 2%;
   // min-width: 96%;
   
-  max-width: 600px;
+  // max-width: 600px;
+  // max-height: 480px;
   border: none;
   display: block;
   position: relative;
