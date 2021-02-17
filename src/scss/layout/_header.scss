@@ -1,20 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
-
 .header {
-  height: 5%;
+  height: 45px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-// position: fixed;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #f3f3f3;
   @media all and (min-width: 601px) and (max-width: 1024px) {
-    height: 16%;
+    height: 55px;
   }
   @media all and (min-width: 1025px) {
-    height: 20%;
+    height: 66px;
   }
 }
 
@@ -47,60 +44,24 @@
 
 .nav {
   margin: 2% 2% 0 0;
-  // margin: 2% 2% 0 0;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: right;
-  // text-decoration: none;
-  // // min-width: 150px;
-  // height: 21px;
-
-  // @media all and (min-width: 601px) and (max-width: 1024px) {
-  //   font-size: 16px;
-  //   min-width: 200px;
-  //   margin: 1% 1% 0 0;
-  // }
-  // @media all and (min-width: 1025px) {
-  //   font-size: 18px;
-  //   width: 214px;
-  //   height: 21px;
-  //   margin: 1% 1% 0 0;
-  // }
-
-}
-
-.menu {
-  // list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  text-decoration: none;
-  // min-width: 150px;
-  height: 21px;
-
   @media all and (min-width: 601px) and (max-width: 1024px) {
-    font-size: 16px;
-    // min-width: 200px;
     margin: 1% 1% 0 0;
   }
   @media all and (min-width: 1025px) {
-    font-size: 18px;
-    // width: 214px;
-    height: 21px;
     margin: 1% 1% 0 0;
   }
 }
 
-.menu__item--portfolio {
-  list-style-type: none;
- }
-
-.menu__item--contact {
-  list-style-type: none;
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 21px;
 }
 
 .menu__item--portfolio {
   margin-right: 4px;
+  list-style-type: none;
 
   @media all and (min-width: 601px) and (max-width: 1024px) {
     margin-right: 5px;
@@ -112,7 +73,7 @@
 
 .menu__item--contact {
   margin-left: 4px;
-
+  list-style-type: none;
   @media all and (min-width: 601px) and (max-width: 1024px) {
     margin-left: 5px;
   }
@@ -121,22 +82,14 @@
   }
 }
 
-.menu__item--portfolio .menu__item--contact {
-  list-style-type: none;
-  text-decoration: none;
-  list-style: none;
-}
-
 .menu__item--link {
-  text-decoration: none;
-  list-style-type: none;
   font-family: "Rubik", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: black;
   text-transform: uppercase;
 
   @media all and (min-width: 601px) and (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 17px;
   }
   @media all and (min-width: 1025px) {
     font-size: 18px;
@@ -144,11 +97,9 @@
 }
 
 .menu__item--link .portfolio {
-  // padding: 1%;
   margin-right: 5px;
 }
 
 .menu__item--link .contact {
-  // padding: 1%;
   margin-left: 5px;
 }
