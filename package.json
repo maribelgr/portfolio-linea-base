@@ -1,5 +1,6 @@
 {
 	"name": "portfolio-linea-base",
+	"homepage": "./",
 	"version": "1.0.0",
 	"description": "portfolio linea base",
 	"dependencies": {
@@ -35,6 +36,5 @@
 		"url": ""
 	},
 	"author": "maribelgr",
-	"license": "MIT",
-	"homepage": ""
+	"license": "MIT"
 }
