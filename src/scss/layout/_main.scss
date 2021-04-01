@@ -39,8 +39,9 @@
   @media all and (min-width: 601px) and (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 1%;
-    grid-row-gap: 0.45%;
+    // grid-column-gap: 1%;
+    // grid-row-gap: 0.45%;
+    grid-gap: 1vw;
   }
   @media all and (min-width: 1025px) {
     grid-template-columns: repeat(3, 1fr);    grid-template-rows: repeat(4, 1fr);
